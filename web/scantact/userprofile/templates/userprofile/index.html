@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!doctype html>
 <!--
   Material Design Lite
@@ -28,7 +29,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.1.1/material.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="{% static 'userprofile/css/styles.css' %}">
   </head>
   <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
@@ -51,13 +52,9 @@
           <!-- Navigation -->
           <div class="scan-navigation-container">
             <nav class="scan-navigation mdl-navigation">
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Phones</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Tablets</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Wear</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">TV</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Auto</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">One</a>
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Play</a>
+              <a  class="mdl-navigation__link mdl-typography--text-uppercase" href="">Login</a>
+              <a id="demo-show-toast" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-typography--text-uppercase" href="#">Signup</a>
+              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Contact us</a>
             </nav>
           </div>
           <span class="scan-mobile-title mdl-layout-title">
@@ -67,10 +64,7 @@
             <i class="material-icons">more_vert</i>
           </button>
           <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-            <li class="mdl-menu__item">5.0 Lollipop</li>
-            <li class="mdl-menu__item">4.4 KitKat</li>
-            <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
-            <li class="mdl-menu__item">scan History</li>
+            <li class="mdl-menu__item">scantact History</li>
           </ul>
         </div>
       </div>
@@ -80,41 +74,18 @@
           <img class="scan-logo-image" src="images/scan-logo-white.png">
         </span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">Phones</a>
-          <a class="mdl-navigation__link" href="">Tablets</a>
-          <a class="mdl-navigation__link" href="">Wear</a>
-          <a class="mdl-navigation__link" href="">TV</a>
-          <a class="mdl-navigation__link" href="">Auto</a>
-          <a class="mdl-navigation__link" href="">One</a>
-          <a class="mdl-navigation__link" href="">Play</a>
+          <a class="mdl-navigation__link" href="">Login</a>
+          <a class="mdl-navigation__link" href="">Signup</a>
+          <a class="mdl-navigation__link" href="">Contact us</a>
           <div class="scan-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">Versions</span>
-          <a class="mdl-navigation__link" href="">Lollipop 5.0</a>
-          <a class="mdl-navigation__link" href="">KitKat 4.4</a>
-          <a class="mdl-navigation__link" href="">Jelly Bean 4.3</a>
-          <a class="mdl-navigation__link" href="">scan history</a>
-          <div class="scan-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">Resources</span>
-          <a class="mdl-navigation__link" href="">Official blog</a>
-          <a class="mdl-navigation__link" href="">scan on Google+</a>
-          <a class="mdl-navigation__link" href="">scan on Twitter</a>
-          <div class="scan-drawer-separator"></div>
-          <span class="mdl-navigation__link" href="">For developers</span>
-          <a class="mdl-navigation__link" href="">App developer resources</a>
-          <a class="mdl-navigation__link" href="">scan Open Source Project</a>
-          <a class="mdl-navigation__link" href="">scan SDK</a>
         </nav>
       </div>
 
       <div class="scan-content mdl-layout__content">
         <a name="top"></a>
         <div class="scan-be-together-section mdl-typography--text-center">
-          <div class="logo-font scan-slogan">be together. not the same.</div>
-          <div class="logo-font scan-sub-slogan">welcome to scan... be yourself. do your thing. see what's going on.</div>
-          <div class="logo-font scan-create-character">
-            <a href=""><img src="images/andy.png"> create your scan character</a>
-          </div>
-
+          <div class="logo-font scan-slogan">Welcome to Scantact!</div>
+          <div class="logo-font scan-sub-slogan">be yourself. do your thing. see what's going on.</div>
           <a href="#screens">
             <button class="scan-fab mdl-button mdl-button--colored mdl-js-button mdl-button--fab mdl-js-ripple-effect">
               <i class="material-icons">expand_more</i>
@@ -123,140 +94,28 @@
         </div>
         <div class="scan-screen-section mdl-typography--text-center">
           <a name="screens"></a>
-          <div class="mdl-typography--display-1-color-contrast">Powering screens of all sizes</div>
+          <div class="mdl-typography--display-1-color-contrast">Get in touch with us</div>
           <div class="scan-screens">
-            <div class="scan-wear scan-screen">
-              <a class="scan-image-link" href="">
-                <img class="scan-screen-image" src="images/wear-silver-on.png">
-                <img class="scan-screen-image" src="images/wear-black-on.png">
-              </a>
-              <a class="scan-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">scan Wear</a>
-            </div>
-            <div class="scan-phone scan-screen">
-              <a class="scan-image-link" href="">
-                <img class="scan-screen-image" src="images/nexus6-on.jpg">
-              </a>
-              <a class="scan-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Phones</a>
-            </div>
-            <div class="scan-tablet scan-screen">
-              <a class="scan-image-link" href="">
-                <img class="scan-screen-image" src="images/nexus9-on.jpg">
-              </a>
-              <a class="scan-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">Tablets</a>
-            </div>
-            <div class="scan-tv scan-screen">
-              <a class="scan-image-link" href="">
-                <img class="scan-screen-image" src="images/tv-on.jpg">
-              </a>
-              <a class="scan-link mdl-typography--font-regular mdl-typography--text-uppercase" href="">scan TV</a>
-            </div>
-            <div class="scan-auto scan-screen">
-              <a class="scan-image-link" href="">
-                <img class="scan-screen-image" src="images/auto-on.jpg">
-              </a>
-              <a class="scan-link mdl-typography--font-regular mdl-typography--text-uppercase mdl-typography--text-left" href="">Coming Soon: scan Auto</a>
-            </div>
-          </div>
-        </div>
-        <div class="scan-wear-section">
-          <div class="scan-wear-band">
-            <div class="scan-wear-band-text">
-              <div class="mdl-typography--display-2 mdl-typography--font-thin">The best of Google built in</div>
-              <p class="mdl-typography--headline mdl-typography--font-thin">
-                scan works perfectly with your favourite apps like Google Maps,
-                Calendar and YouTube.
-              </p>
-              <p>
-                <a class="mdl-typography--font-regular mdl-typography--text-uppercase scan-alt-link" href="">
-                  See what's new in the Play Store&nbsp;<i class="material-icons">chevron_right</i>
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="scan-customized-section">
-          <div class="scan-customized-section-text">
-            <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Customised by you, for you</div>
-            <p class="mdl-typography--font-light">
-              Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos.
-              <br>
-              <a href="" class="scan-link mdl-typography--font-light">Customise your phone</a>
-            </p>
-          </div>
-          <div class="scan-customized-section-image"></div>
-        </div>
-        <div class="scan-more-section">
-          <div class="scan-section-title mdl-typography--display-1-color-contrast">More from scan</div>
-          <div class="scan-card-container mdl-grid">
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/more-from-1.png">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Get going on scan</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Four tips to make your switch to scan quick and easy</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="scan-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   Make the switch
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/more-from-4.png">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Create your own scan character</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Turn the little green scan mascot into you, your friends, anyone!</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="scan-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   scanify.com
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/more-from-2.png">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Get a clean customisable home screen</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">A clean, simple, customisable home screen that comes with the power of Google Now: Traffic alerts, weather and much more, just a swipe away.</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="scan-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   Download now
-                   <i class="material-icons">chevron_right</i>
-                 </a>
-              </div>
-            </div>
-
-            <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-              <div class="mdl-card__media">
-                <img src="images/more-from-3.png">
-              </div>
-              <div class="mdl-card__title">
-                 <h4 class="mdl-card__title-text">Millions to choose from</h4>
-              </div>
-              <div class="mdl-card__supporting-text">
-                <span class="mdl-typography--font-light mdl-typography--subhead">Hail a taxi, find a recipe, run through a temple – Google Play has all the apps and games that let you make your scan device uniquely yours.</span>
-              </div>
-              <div class="mdl-card__actions">
-                 <a class="scan-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                   Find apps
-                   <i class="material-icons">chevron_right</i>
-                 </a>
+            <!-- Simple Textfield -->
+            <div class="mdl-grid">
+              <div class="mdl-cell mdl-cell--4-col mdl-cell--4-offset">
+                <form action="#">
+                  <div class="mdl-textfield mdl-js-textfield">
+                    <input class="mdl-textfield__input" type="text" id="name">
+                    <label class="mdl-textfield__label" for="name">Name</label>
+                  </div><br>
+                  <div class="mdl-textfield mdl-js-textfield">
+                    <input class="mdl-textfield__input" type="email" id="email">
+                    <label class="mdl-textfield__label" for="email">Email</label>
+                  </div><br>
+                    <div class="mdl-textfield mdl-js-textfield">
+                      <textarea class="mdl-textfield__input" type="text" rows= "3" id="message" ></textarea>
+                      <label class="mdl-textfield__label" for="message">Your message</label>
+                    </div><br>
+                    <button type="submit" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+                      Submit
+                    </button>
+                </form>
               </div>
             </div>
           </div>
@@ -280,8 +139,7 @@
           </div>
 
           <div class="mdl-mega-footer--middle-section">
-            <p class="mdl-typography--font-light">Satellite imagery: © 2014 Astrium, DigitalGlobe</p>
-            <p class="mdl-typography--font-light">Some features and devices may not be available in all areas</p>
+            <p class="mdl-typography--font-light">© 2016 Scantact</p>
           </div>
 
           <div class="mdl-mega-footer--bottom-section">
@@ -290,9 +148,6 @@
               <i class="material-icons">arrow_drop_up</i>
             </a>
             <ul class="mdl-menu mdl-js-menu mdl-menu--top-left mdl-js-ripple-effect" for="version-dropdown">
-              <li class="mdl-menu__item">5.0 Lollipop</li>
-              <li class="mdl-menu__item">4.4 KitKat</li>
-              <li class="mdl-menu__item">4.3 Jelly Bean</li>
               <li class="mdl-menu__item">scan History</li>
             </ul>
             <a class="scan-link scan-link-menu mdl-typography--font-light" id="developers-dropdown">
@@ -312,7 +167,23 @@
         </footer>
       </div>
     </div>
-    <a href="https://github.com/google/material-design-lite/blob/master/templates/scan-dot-com/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-color--accent mdl-color-text--accent-contrast">View Source</a>
+    <div id="demo-toast-example" class="mdl-js-snackbar mdl-snackbar">
+  <div class="mdl-snackbar__text"></div>
+      <button class="mdl-snackbar__action" type="button"></button>
+    </div>
+    <script>
+    (function() {
+      'use strict';
+      window['counter'] = 0;
+      var snackbarContainer = document.querySelector('#demo-toast-example');
+      var showToastButton = document.querySelector('#demo-show-toast');
+      showToastButton.addEventListener('click', function() {
+        'use strict';
+        var data = {message: 'Coming soon - '  + ++counter};
+        snackbarContainer.MaterialSnackbar.showSnackbar(data);
+      });
+    }());
+    </script>
     <script src="https://code.getmdl.io/1.1.1/material.min.js"></script>
   </body>
 </html>

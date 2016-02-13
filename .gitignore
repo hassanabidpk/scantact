@@ -1,3 +1,4 @@
 web/scanvenv
 web/scantact/db.sqlite3
 *__pycache__
+*.DS_Store
