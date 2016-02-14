@@ -1,0 +1,46 @@
+{% extends 'userprofile/base.html' %}
+        {% block content %}
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--4-col"></div>
+  <div class="mdl-cell mdl-cell--4-col">
+    <h2>Register</h2>
+    {% if form.errors %}
+    <p>Something went wrong. Try again</p>
+    {% endif %}
+    <form method="post" action="{% url 'userprofile:signup' %}">
+        {% csrf_token %}
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" id="{{ form.username.id_for_label}}">
+            <label class="mdl-textfield__label" for="{{ form.username.id_for_label}}">{{ form.username.label }}</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="email" id="{{ form.emailid_for_label}}">
+            <label class="mdl-textfield__label" for="{{ form.email.id_for_label}}">{{ form.email.label }}</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="password" id="{{ form.password1.id_for_label}}">
+            <label class="mdl-textfield__label" for="{{form.password1.id_for_label}}">{{ form.password1.label }}</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="password" id="{{ form.password2.id_for_label }}">
+            <label class="mdl-textfield__label" for="{{form.password2.id_for_label}}">{{ form.password2.label }}</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" id="{{form.first_name.id_for_label}}">
+            <label class="mdl-textfield__label" for="{{form.first_name.id_for_label}}">{{ form.first_name.label }}</label>
+          </div>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" id="{{form.last_name.id_for_label}}">
+            <label class="mdl-textfield__label" for="{{form.last_name.id_for_label}}">{{ form.last_name.label }}</label>
+          </div>
+        <div>
+          <input type="hidden" name="next" value="{{ next }}" />
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" type="submit">
+            Signup
+          </button>
+        </div>
+    </form>
+  </div>
+  <div class="mdl-cell mdl-cell--4-col"></div>
+</div>
+{% endblock %}
