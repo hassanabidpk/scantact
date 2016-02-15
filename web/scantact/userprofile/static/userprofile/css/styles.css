@@ -62,27 +62,27 @@ a img{
 
 
 .scan-logo-image {
-  height: 28px;
-  width: 140px;
+  height: 40px;
+  /*width: 140px;*/
 }
 
 
 .scan-header {
   overflow: visible;
-  /*background-color: white;*/
+  background-color: white;
 }
 
   .scan-header .material-icons {
-    /*color: #767777 !important;*/
+    color: #767777 !important;
   }
 
   .scan-header .mdl-layout__drawer-button {
     background: transparent;
-    /*color: #767777;*/
+    color: #767777;
   }
 
   .scan-header .mdl-navigation__link {
-    /*color: #757575;*/
+    color: #757575;
     font-weight: 700;
     font-size: 14px;
     opacity: 1 !important;
@@ -154,7 +154,7 @@ a img{
 
   .scan-drawer .mdl-navigation__link.mdl-navigation__link {
     font-size: 14px;
-    /*color: #757575;*/
+    color: #757575;
   }
 
   .scan-drawer span.mdl-navigation__link.mdl-navigation__link {
@@ -163,7 +163,8 @@ a img{
 
   .scan-drawer .mdl-layout-title {
     position: relative;
-    background: #6ab344;
+    /*background: #3f51b5;*/
+    background: white;
     height: 160px;
   }
 
