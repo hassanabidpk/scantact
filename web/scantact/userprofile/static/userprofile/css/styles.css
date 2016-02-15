@@ -542,3 +542,7 @@ a img{
     display: none;
   }
 }
+.errorlist li{
+  color: red !important;
+
+}
