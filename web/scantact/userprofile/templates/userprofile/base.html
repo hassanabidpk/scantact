@@ -79,8 +79,13 @@
           <img class="scan-logo-image" src="images/scan-logo-white.png">
         </span>
         <nav class="mdl-navigation">
+          {% if user.is_authenticated %}
+           <a  class="mdl-navigation__link mdl-typography--text-uppercase" href="/account/profile">Welcome {{ user.username }}</a>
+            <a  class="mdl-navigation__link mdl-typography--text-uppercase" href="/account/logout">Logout</a>
+           {% else %}
           <a class="mdl-navigation__link" href="/account/login/">Login</a>
           <a class="mdl-navigation__link" href="/account/signup/">Signup</a>
+          {% endif %}
           <a class="mdl-navigation__link" href="">Contact us</a>
           <div class="scan-drawer-separator"></div>
         </nav>
