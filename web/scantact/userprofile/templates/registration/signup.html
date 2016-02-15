@@ -10,27 +10,27 @@
     <form method="post" action="{% url 'userprofile:signup' %}">
         {% csrf_token %}
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" id="{{ form.username.id_for_label}}">
+            <input class="mdl-textfield__input" type="text" name="{{ form.username.html_name }}" id="{{ form.username.id_for_label}}">
             <label class="mdl-textfield__label" for="{{ form.username.id_for_label}}">{{ form.username.label }}</label>
           </div>
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="email" id="{{ form.emailid_for_label}}">
+            <input class="mdl-textfield__input" type="email" name="{{ form.email.html_name }}" id="{{ form.emailid_for_label}}">
             <label class="mdl-textfield__label" for="{{ form.email.id_for_label}}">{{ form.email.label }}</label>
           </div>
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="password" id="{{ form.password1.id_for_label}}">
+            <input class="mdl-textfield__input" type="password" name="{{ form.password1.html_name }}" id="{{ form.password1.id_for_label}}">
             <label class="mdl-textfield__label" for="{{form.password1.id_for_label}}">{{ form.password1.label }}</label>
           </div>
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="password" id="{{ form.password2.id_for_label }}">
+            <input class="mdl-textfield__input" type="password" name="{{ form.password2.html_name }}" id="{{ form.password2.id_for_label }}">
             <label class="mdl-textfield__label" for="{{form.password2.id_for_label}}">{{ form.password2.label }}</label>
           </div>
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" id="{{form.first_name.id_for_label}}">
+            <input class="mdl-textfield__input" type="text" name="{{ form.first_name.html_name }}" id="{{form.first_name.id_for_label}}">
             <label class="mdl-textfield__label" for="{{form.first_name.id_for_label}}">{{ form.first_name.label }}</label>
           </div>
           <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" id="{{form.last_name.id_for_label}}">
+            <input class="mdl-textfield__input" type="text" name="{{ form.last_name.html_name }}" id="{{form.last_name.id_for_label}}">
             <label class="mdl-textfield__label" for="{{form.last_name.id_for_label}}">{{ form.last_name.label }}</label>
           </div>
         <div>

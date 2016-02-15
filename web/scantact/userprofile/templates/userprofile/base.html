@@ -52,8 +52,13 @@
           <!-- Navigation -->
           <div class="scan-navigation-container">
             <nav class="scan-navigation mdl-navigation">
-              <a  class="mdl-navigation__link mdl-typography--text-uppercase" href="/accounts/login/">Login</a>
+            {% if user.is_authenticated %}
+             <a  class="mdl-navigation__link mdl-typography--text-uppercase" href="/account/profile">Welcome {{ user.username }}</a>
+              <a  class="mdl-navigation__link mdl-typography--text-uppercase" href="/account/logout">Logout</a>
+             {% else %}
+              <a  class="mdl-navigation__link mdl-typography--text-uppercase" href="/account/login/">Login</a>
               <a id="demo-show-toast1" class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent mdl-typography--text-uppercase" href="{% url 'userprofile:signup' %}">Signup</a>
+              {% endif %}
               <a class="mdl-navigation__link mdl-typography--text-uppercase" href="">Contact us</a>
             </nav>
           </div>

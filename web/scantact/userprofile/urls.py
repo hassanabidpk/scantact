@@ -20,5 +20,6 @@ from . import views
 urlpatterns = [
     url('^signup/',views.signup,name="signup",),
     url('^logout',views.logout_view,name="logout"),
+    url('^profile',views.profile,name="profile"),
     url('^', include('django.contrib.auth.urls')),
 ]

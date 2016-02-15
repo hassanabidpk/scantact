@@ -21,7 +21,7 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-	url(r'^accounts/',include('userprofile.urls', namespace='userprofile')),
+	url(r'^account/',include('userprofile.urls', namespace='userprofile')),
     url(r'^$',TemplateView.as_view(template_name='userprofile/index.html'),name='index'),
 ]
 
