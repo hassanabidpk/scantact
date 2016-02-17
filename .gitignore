@@ -8,3 +8,9 @@ iOS/Scantact/build/
 iOS/Scantact/DrivedData/
 iOS/Scantact/Pods/
 iOS/Scantact/Scantact.xcodeproj/project.xcworkspace/xcuserdata/hassanabid.xcuserdatad/UserInterfaceState.xcuserstate
+iOS/Scantact/xcuserdata/
+
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
