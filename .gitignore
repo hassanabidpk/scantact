@@ -2,3 +2,9 @@ web/scanvenv
 web/scantact/db.sqlite3
 *__pycache__
 *.DS_Store
+
+#iOS
+iOS/Scantact/build/
+iOS/Scantact/DrivedData/
+iOS/Scantact/Pods/
+iOS/Scantact/Scantact.xcodeproj/project.xcworkspace/xcuserdata/hassanabid.xcuserdatad/UserInterfaceState.xcuserstate
