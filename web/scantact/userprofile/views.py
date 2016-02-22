@@ -78,12 +78,13 @@ def edit_profile(request):
 			current_profile.profile_pic,'position': current_profile.position,'work_number':current_profile.work_number,
 			'work_fax':current_profile.work_fax,'work_email':current_profile.work_email,'work_address':current_profile.work_address
 			},instance=current_profile)
+			curr_profile_pic = current_profile.profile_pic
 		else :
 			form = ProfileForm(initial={'user': request.user},instance=current_profile)
+			curr_profile_pic = None
 		if company:
 			companyform = CompanyForm(initial={'company_name':company.company_name,'industry':company.industry,
 			'company_number':company.company_number,'company_logo':company.company_logo},instance=company)
 		else :
 			companyform = CompanyForm(instance=company)
-
-	return render(request,'userprofile/edit_profile.html',{ 'form': form,'companyform':companyform,'curr_profile_pic':current_profile.profile_pic })
+	return render(request,'userprofile/edit_profile.html',{ 'form': form,'companyform':companyform,'curr_profile_pic':curr_profile_pic })
