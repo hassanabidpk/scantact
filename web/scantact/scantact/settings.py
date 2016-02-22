@@ -128,3 +128,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads')
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 LOGIN_REDIRECT_URL = '/account/profile/'
+PHONENUMBER_DB_FORMAT = 'INTERNATIONAL'
+PHONENUMBER_DEFAULT_REGION = 'Asia/Seoul'

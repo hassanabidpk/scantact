@@ -1,0 +1,131 @@
+{% extends 'userprofile/base.html' %}
+        {% block content %}
+<div class="mdl-grid">
+  <div class="mdl-cell mdl-cell--4-col"></div>
+  <div class="mdl-cell mdl-cell--5-col">
+    <h2>Edit Profile</h2>
+    {% if form.errors %}
+    <p>Kindly fix following issues and try again</p>
+    {% endif %}
+    <form enctype="multipart/form-data" method="post" action="{% url 'userprofile:edit_profile' %}">
+        {% csrf_token %}
+          <h4>Personal Information</h4>
+        <div id="fileDisplayArea"></div>
+        {% if curr_profile_pic %}
+        <script>
+        window.onload = function() {
+          var fileDisplayArea = document.getElementById('fileDisplayArea');
+          var img = new Image();
+          img.src = {{ curr_profile_pic.url }};
+          fileDisplayArea.appendChild(img);
+        }
+        </script>
+        {% endif %}
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            		<span id="select_profile_pic">Select your profile picture:</span>
+            <input class="mdl-textfield__input" type="file" name="{{ form.profile_pic.html_name }}" id="{{ form.profile_pic.id_for_label }}" value="{{ form.profile_pic.value }}">
+            <label class="mdl-textfield__label" for="{{ form.profile_pic.id_for_label}}"></label>
+             {{ form.profile_pic.errors }}
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" name="{{ form.phone_number.html_name }}" id="{{ form.phone_number.id_for_label}}" value="{{ form.phone_number.value }}">
+            <label class="mdl-textfield__label" for="{{ form.phone_number.id_for_label}}">{{ form.phone_number.label }}</label>
+             {{ form.phone_number.errors }}
+          </div>
+
+          <!-- Company Form -->
+          <h4>Company Information</h4>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" name="{{ companyform.company_name.html_name }}" id="{{ companyform.company_name.id_for_label}}" value="{{ companyform.company_name.value }}">
+            <label class="mdl-textfield__label" for="{{ companyform.company_name.id_for_label}}">{{ companyform.company_name.label}}</label>
+             {{ companyform.company_name.errors }}
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="file" name="{{ companyform.company_logo.html_name }}" id="{{ companyform.company_logo.id_for_label}}" value="{{ companyform.company_logo.value }}">
+            <label class="mdl-textfield__label" for="{{ companyform.company_logo.id_for_label}}"></label>
+             {{ companyform.company_logo.errors }}
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" name="{{ companyform.company_number.html_name }}" id="{{ companyform.company_number.id_for_label}}" value="{{ companyform.company_number.value }}">
+            <label class="mdl-textfield__label" for="{{ companyform.company_number.id_for_label}}">{{ companyform.company_number.label }}</label>
+             {{ companyform.company_number.errors }}
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" name="{{ companyform.industry.html_name }}" id="{{ companyform.industry.id_for_label}}" value="{{ companyform.industry.value }}">
+            <label class="mdl-textfield__label" for="{{ companyform.industry.id_for_label}}">{{ companyform.industry.label }}</label>
+             {{ companyform.industry.errors }}
+          </div>
+          <!-- Companyform end -->
+
+
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" name="{{ form.position.html_name }}" id="{{ form.position.id_for_label}}" value="{{ form.position.value }}">
+            <label class="mdl-textfield__label" for="{{ form.position.id_for_label}}">{{ form.position.label }}</label>
+             {{ form.position.errors }}
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="email" name="{{ form.work_email.html_name }}" id="{{ form.work_email.id_for_label}}" value="{{ form.work_email.value }}">
+            <label class="mdl-textfield__label" for="{{ form.work_email.id_for_label}}">{{ form.work_email.label }}</label>
+            <span class="mdl-textfield__error">Enter proper email address!</span>
+             {{ form.work_email.errors }}
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" name="{{ form.work_number.html_name }}" id="{{ form.work_number.id_for_label}}" value="{{ form.work_number.value }}">
+            <label class="mdl-textfield__label" for="{{ form.work_number.id_for_label}}">{{ form.work_number.label }}</label>
+             {{ form.work_number.errors }}
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <input class="mdl-textfield__input" type="text" name="{{ form.work_fax.html_name }}" id="{{ form.work_fax.id_for_label}}" value="{{ form.work_fax.value }}">
+            <label class="mdl-textfield__label" for="{{ form.work_fax.id_for_label}}">{{ form.work_fax.label }}</label>
+             {{ form.work_fax.errors }}
+          </div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+            <textarea class="mdl-textfield__input" type="text" rows= "3" name="{{ form.work_address.html_name }}" id="{{ form.work_address.id_for_label}}">{{ form.work_address.value }}</textarea>
+            <label class="mdl-textfield__label" for="{{ form.work_address.id_for_label}}">{{ form.work_address.label }}</label>
+             {{ form.work_address.errors }}
+          </div>
+
+        <div>
+          <input type="hidden" name="next" value="{{ next }}" />
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored" type="submit">
+            Save
+          </button>
+        </div>
+    </form>
+  </div>
+  <div class="mdl-cell mdl-cell--3-col"></div>
+</div>
+<script>
+window.onload = function() {
+
+		var fileInput = document.getElementById('id_profile_pic');
+		var fileDisplayArea = document.getElementById('fileDisplayArea');
+    var profile_pic_text = document.getElementById("select_profile_pic");
+
+		fileInput.addEventListener('change', function(e) {
+			var file = fileInput.files[0];
+			var imageType = /image.*/;
+
+			if (file.type.match(imageType)) {
+				var reader = new FileReader();
+
+				reader.onload = function(e) {
+					fileDisplayArea.innerHTML = "";
+
+					var img = new Image();
+					img.src = reader.result;
+
+					fileDisplayArea.appendChild(img);
+          profile_pic_text.hidden = true;
+				}
+
+				reader.readAsDataURL(file);
+			} else {
+				fileDisplayArea.innerHTML = "File not supported!"
+			}
+		});
+
+}
+
+</script>
+{% endblock %}

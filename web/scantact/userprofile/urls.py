@@ -18,8 +18,9 @@ from django.contrib import admin
 from . import views
 
 urlpatterns = [
-    url('^signup/',views.signup,name="signup",),
-    url('^logout',views.logout_view,name="logout"),
-    url('^profile',views.profile,name="profile"),
+    url('^signup/$',views.signup,name="signup",),
+    url('^logout/$',views.logout_view,name="logout"),
+    url('^profile/edit/$',views.edit_profile,name="edit_profile"),
+    url('^profile/$',views.profile,name="profile"),
     url('^', include('django.contrib.auth.urls')),
 ]
