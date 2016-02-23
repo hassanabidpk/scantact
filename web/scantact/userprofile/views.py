@@ -21,7 +21,7 @@ def signup(request):
 			user = authenticate(username=username, password=password)
 			user.backend = "django.contrib.auth.backends.ModelBackend"
 			login(request, user)
-			return HttpResponseRedirect('/account/profile/eidt/')
+			return HttpResponseRedirect('/account/profile/edit/')
 		else:
 			print("form is not valid")
 	else:
