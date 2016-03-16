@@ -14,3 +14,7 @@ iOS/Scantact/xcuserdata/
 *.moved-aside
 *.xccheckout
 *.xcscmblueprint
+
+design
+samples
+web/scantact/uploads

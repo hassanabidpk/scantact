@@ -23,6 +23,10 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
 	url(r'^account/',include('userprofile.urls', namespace='userprofile')),
     url(r'^$',TemplateView.as_view(template_name='userprofile/index.html'),name='index'),
+    url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
+    url(r'^rest-auth/', include('rest_auth.urls')),
+    url(r'^rest-auth/registration/', include('rest_auth.registration.urls')),
+
 ]
 
 urlpatterns += staticfiles_urlpatterns()
