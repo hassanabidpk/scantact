@@ -7,14 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C812970E425031FF94FE97D /* Pods_Scantact.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C9CC114E8AECF577140904 /* Pods_Scantact.framework */; };
+		3C6F98FD1C95342000532E47 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F98FC1C95342000532E47 /* LoginViewController.swift */; };
+		3C6F98FE1C95342000532E47 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F98FC1C95342000532E47 /* LoginViewController.swift */; };
+		3C6F98FF1C95342000532E47 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F98FC1C95342000532E47 /* LoginViewController.swift */; };
+		3C6F99011C95B99800532E47 /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F99001C95B99800532E47 /* HomeTabBarViewController.swift */; };
+		3C6F99021C95B99800532E47 /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F99001C95B99800532E47 /* HomeTabBarViewController.swift */; };
+		3C6F99031C95B99800532E47 /* HomeTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F99001C95B99800532E47 /* HomeTabBarViewController.swift */; };
+		3C6F99051C96961E00532E47 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F99041C96961E00532E47 /* SignupViewController.swift */; };
+		3C6F99061C96961E00532E47 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F99041C96961E00532E47 /* SignupViewController.swift */; };
+		3C6F99071C96961E00532E47 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F99041C96961E00532E47 /* SignupViewController.swift */; };
+		3C6F99091C98516900532E47 /* UIColor+ApplicationSpecific.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F99081C98516900532E47 /* UIColor+ApplicationSpecific.swift */; };
+		3C6F990A1C98516900532E47 /* UIColor+ApplicationSpecific.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F99081C98516900532E47 /* UIColor+ApplicationSpecific.swift */; };
+		3C6F990B1C98516900532E47 /* UIColor+ApplicationSpecific.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6F99081C98516900532E47 /* UIColor+ApplicationSpecific.swift */; };
 		3CA0EC921C72BF2C00108409 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0EC911C72BF2C00108409 /* AppDelegate.swift */; };
-		3CA0EC941C72BF2C00108409 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0EC931C72BF2C00108409 /* FirstViewController.swift */; };
-		3CA0EC961C72BF2C00108409 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0EC951C72BF2C00108409 /* SecondViewController.swift */; };
+		3CA0EC941C72BF2C00108409 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0EC931C72BF2C00108409 /* ProfileViewController.swift */; };
 		3CA0EC991C72BF2C00108409 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CA0EC971C72BF2C00108409 /* Main.storyboard */; };
 		3CA0EC9B1C72BF2C00108409 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CA0EC9A1C72BF2C00108409 /* Assets.xcassets */; };
 		3CA0EC9E1C72BF2C00108409 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CA0EC9C1C72BF2C00108409 /* LaunchScreen.storyboard */; };
 		3CA0ECA91C72BF2C00108409 /* ScantactTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0ECA81C72BF2C00108409 /* ScantactTests.swift */; };
 		3CA0ECB41C72BF2C00108409 /* ScantactUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0ECB31C72BF2C00108409 /* ScantactUITests.swift */; };
+		3CA0ECC31C74BA8C00108409 /* GettingStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0ECC21C74BA8C00108409 /* GettingStartedViewController.swift */; };
+		3CA0ECC41C74BA8C00108409 /* GettingStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0ECC21C74BA8C00108409 /* GettingStartedViewController.swift */; };
+		3CA0ECC51C74BA8C00108409 /* GettingStartedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0ECC21C74BA8C00108409 /* GettingStartedViewController.swift */; };
+		3CA0ECC71C74BE0400108409 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0ECC61C74BE0400108409 /* MainViewController.swift */; };
+		3CA0ECC81C74BE0400108409 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0ECC61C74BE0400108409 /* MainViewController.swift */; };
+		3CA0ECC91C74BE0400108409 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0ECC61C74BE0400108409 /* MainViewController.swift */; };
+		3CA0ECCB1C7583F500108409 /* GettingStartedPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0ECCA1C7583F500108409 /* GettingStartedPageViewController.swift */; };
+		3CA0ECCC1C7583F500108409 /* GettingStartedPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0ECCA1C7583F500108409 /* GettingStartedPageViewController.swift */; };
+		3CA0ECCD1C7583F500108409 /* GettingStartedPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA0ECCA1C7583F500108409 /* GettingStartedPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,10 +56,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C6F98FC1C95342000532E47 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = login/LoginViewController.swift; sourceTree = "<group>"; };
+		3C6F99001C95B99800532E47 /* HomeTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabBarViewController.swift; sourceTree = "<group>"; };
+		3C6F99041C96961E00532E47 /* SignupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignupViewController.swift; path = login/SignupViewController.swift; sourceTree = "<group>"; };
+		3C6F99081C98516900532E47 /* UIColor+ApplicationSpecific.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+ApplicationSpecific.swift"; sourceTree = "<group>"; };
 		3CA0EC8E1C72BF2C00108409 /* Scantact.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scantact.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA0EC911C72BF2C00108409 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3CA0EC931C72BF2C00108409 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		3CA0EC951C72BF2C00108409 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		3CA0EC931C72BF2C00108409 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		3CA0EC981C72BF2C00108409 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3CA0EC9A1C72BF2C00108409 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3CA0EC9D1C72BF2C00108409 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +73,12 @@
 		3CA0ECAF1C72BF2C00108409 /* ScantactUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScantactUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA0ECB31C72BF2C00108409 /* ScantactUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScantactUITests.swift; sourceTree = "<group>"; };
 		3CA0ECB51C72BF2C00108409 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3CA0ECC21C74BA8C00108409 /* GettingStartedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GettingStartedViewController.swift; sourceTree = "<group>"; };
+		3CA0ECC61C74BE0400108409 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		3CA0ECCA1C7583F500108409 /* GettingStartedPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GettingStartedPageViewController.swift; sourceTree = "<group>"; };
+		638B5E4C1CAD58D12FF844B7 /* Pods-Scantact.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scantact.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Scantact/Pods-Scantact.debug.xcconfig"; sourceTree = "<group>"; };
+		89DCB66F8BD18B808B8C1B7F /* Pods-Scantact.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scantact.release.xcconfig"; path = "Pods/Target Support Files/Pods-Scantact/Pods-Scantact.release.xcconfig"; sourceTree = "<group>"; };
+		E2C9CC114E8AECF577140904 /* Pods_Scantact.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scantact.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C812970E425031FF94FE97D /* Pods_Scantact.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +107,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C6F990C1C98517A00532E47 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3C6F99081C98516900532E47 /* UIColor+ApplicationSpecific.swift */,
+			);
+			name = helpers;
+			sourceTree = "<group>";
+		};
 		3CA0EC851C72BF2C00108409 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +122,8 @@
 				3CA0ECA71C72BF2C00108409 /* ScantactTests */,
 				3CA0ECB21C72BF2C00108409 /* ScantactUITests */,
 				3CA0EC8F1C72BF2C00108409 /* Products */,
+				CCAC8A4AD6E1B90FD3B0FF22 /* Pods */,
+				B8500DBA97D9C646CF576D3D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +140,9 @@
 		3CA0EC901C72BF2C00108409 /* Scantact */ = {
 			isa = PBXGroup;
 			children = (
+				3C6F990C1C98517A00532E47 /* helpers */,
+				3CA0ECC11C74BA5E00108409 /* viewcontrollers */,
 				3CA0EC911C72BF2C00108409 /* AppDelegate.swift */,
-				3CA0EC931C72BF2C00108409 /* FirstViewController.swift */,
-				3CA0EC951C72BF2C00108409 /* SecondViewController.swift */,
 				3CA0EC971C72BF2C00108409 /* Main.storyboard */,
 				3CA0EC9A1C72BF2C00108409 /* Assets.xcassets */,
 				3CA0EC9C1C72BF2C00108409 /* LaunchScreen.storyboard */,
@@ -128,6 +169,37 @@
 			path = ScantactUITests;
 			sourceTree = "<group>";
 		};
+		3CA0ECC11C74BA5E00108409 /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				3CA0EC931C72BF2C00108409 /* ProfileViewController.swift */,
+				3CA0ECC21C74BA8C00108409 /* GettingStartedViewController.swift */,
+				3CA0ECC61C74BE0400108409 /* MainViewController.swift */,
+				3CA0ECCA1C7583F500108409 /* GettingStartedPageViewController.swift */,
+				3C6F98FC1C95342000532E47 /* LoginViewController.swift */,
+				3C6F99001C95B99800532E47 /* HomeTabBarViewController.swift */,
+				3C6F99041C96961E00532E47 /* SignupViewController.swift */,
+			);
+			name = viewcontrollers;
+			sourceTree = "<group>";
+		};
+		B8500DBA97D9C646CF576D3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2C9CC114E8AECF577140904 /* Pods_Scantact.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCAC8A4AD6E1B90FD3B0FF22 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				638B5E4C1CAD58D12FF844B7 /* Pods-Scantact.debug.xcconfig */,
+				89DCB66F8BD18B808B8C1B7F /* Pods-Scantact.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +207,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3CA0ECB81C72BF2C00108409 /* Build configuration list for PBXNativeTarget "Scantact" */;
 			buildPhases = (
+				62E16FE97F9A662B38540CC2 /* Check Pods Manifest.lock */,
 				3CA0EC8A1C72BF2C00108409 /* Sources */,
 				3CA0EC8B1C72BF2C00108409 /* Frameworks */,
 				3CA0EC8C1C72BF2C00108409 /* Resources */,
+				B58AC86C26F921672A3C4B78 /* Embed Pods Frameworks */,
+				1EA7FAB034BA1C944647F6E6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -196,6 +271,7 @@
 				TargetAttributes = {
 					3CA0EC8D1C72BF2C00108409 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = ZBZ6445J8B;
 					};
 					3CA0ECA31C72BF2C00108409 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -254,14 +330,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1EA7FAB034BA1C944647F6E6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Scantact/Pods-Scantact-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62E16FE97F9A662B38540CC2 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B58AC86C26F921672A3C4B78 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Scantact/Pods-Scantact-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3CA0EC8A1C72BF2C00108409 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CA0EC961C72BF2C00108409 /* SecondViewController.swift in Sources */,
+				3C6F99051C96961E00532E47 /* SignupViewController.swift in Sources */,
+				3C6F98FD1C95342000532E47 /* LoginViewController.swift in Sources */,
+				3CA0ECC31C74BA8C00108409 /* GettingStartedViewController.swift in Sources */,
+				3CA0ECCB1C7583F500108409 /* GettingStartedPageViewController.swift in Sources */,
 				3CA0EC921C72BF2C00108409 /* AppDelegate.swift in Sources */,
-				3CA0EC941C72BF2C00108409 /* FirstViewController.swift in Sources */,
+				3C6F99011C95B99800532E47 /* HomeTabBarViewController.swift in Sources */,
+				3CA0EC941C72BF2C00108409 /* ProfileViewController.swift in Sources */,
+				3CA0ECC71C74BE0400108409 /* MainViewController.swift in Sources */,
+				3C6F99091C98516900532E47 /* UIColor+ApplicationSpecific.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +399,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CA0ECC81C74BE0400108409 /* MainViewController.swift in Sources */,
+				3C6F99061C96961E00532E47 /* SignupViewController.swift in Sources */,
+				3C6F990A1C98516900532E47 /* UIColor+ApplicationSpecific.swift in Sources */,
 				3CA0ECA91C72BF2C00108409 /* ScantactTests.swift in Sources */,
+				3CA0ECCC1C7583F500108409 /* GettingStartedPageViewController.swift in Sources */,
+				3C6F99021C95B99800532E47 /* HomeTabBarViewController.swift in Sources */,
+				3C6F98FE1C95342000532E47 /* LoginViewController.swift in Sources */,
+				3CA0ECC41C74BA8C00108409 /* GettingStartedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +414,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CA0ECC91C74BE0400108409 /* MainViewController.swift in Sources */,
+				3C6F99071C96961E00532E47 /* SignupViewController.swift in Sources */,
+				3C6F990B1C98516900532E47 /* UIColor+ApplicationSpecific.swift in Sources */,
 				3CA0ECB41C72BF2C00108409 /* ScantactUITests.swift in Sources */,
+				3CA0ECCD1C7583F500108409 /* GettingStartedPageViewController.swift in Sources */,
+				3C6F99031C95B99800532E47 /* HomeTabBarViewController.swift in Sources */,
+				3C6F98FF1C95342000532E47 /* LoginViewController.swift in Sources */,
+				3CA0ECC51C74BA8C00108409 /* GettingStartedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,23 +545,33 @@
 		};
 		3CA0ECB91C72BF2C00108409 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 638B5E4C1CAD58D12FF844B7 /* Pods-Scantact.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Scantact/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.scantact.ios.Scantact;
+				PRODUCT_BUNDLE_IDENTIFIER = co.scantact.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		3CA0ECBA1C72BF2C00108409 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89DCB66F8BD18B808B8C1B7F /* Pods-Scantact.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Scantact/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = co.scantact.ios.Scantact;
+				PRODUCT_BUNDLE_IDENTIFIER = co.scantact.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -488,6 +642,7 @@
 				3CA0ECBA1C72BF2C00108409 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3CA0ECBB1C72BF2C00108409 /* Build configuration list for PBXNativeTarget "ScantactTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +651,7 @@
 				3CA0ECBD1C72BF2C00108409 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3CA0ECBE1C72BF2C00108409 /* Build configuration list for PBXNativeTarget "ScantactUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +660,7 @@
 				3CA0ECC01C72BF2C00108409 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
